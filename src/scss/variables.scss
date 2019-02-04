@@ -1,0 +1,77 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Paths
+
+// Images
+$path-img: '../img/';
+
+
+//== Fonts
+
+// Family
+$font-family-base: 'Geometria', Arial, sans-serif;
+
+// Size
+$font-size-base: 16px;
+
+// Line-height
+$font-line-height-base: 1.3;
+
+// Weight
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extra-bold: 800;
+$black-weight: 900;
+
+
+//== Site sizes
+$site-width: 1200px;
+$site-gutter: 15px;
+
+//== Colors
+$white: #fff;
+$black: #000;
+
+$palette: (
+        'main': (
+          'bg': #eef4fa,
+        ),
+        'welcome': (
+          'title': #04a3ea,
+          'description': #265367
+        ),
+        'btn': (
+          'bubble': #28aee4
+        ),
+        'language': (
+          'main': $black
+        )
+);
+
+@function color($color,$tone){
+
+  @warn map-get($palette,$color);
+
+  @if map-has-key($palette,$color){
+    $color: map-get($palette,$color);
+
+    @if map-has-key($color,$tone){
+      $tone: map-get($color,$tone);
+      @return $tone;
+    }
+
+    @warn "unknown tone `#{$tone}` in color";
+    @return null;
+  }
+
+  @warn "unknown color `#{$color}` in palette";
+  @return null;
+}

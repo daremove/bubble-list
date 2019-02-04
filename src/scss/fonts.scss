@@ -1,0 +1,39 @@
+//
+// Fonts
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Geometria';
+  src:  url("../fonts/geometria-light.woff2") format('woff2'),
+  url("../fonts/geometria-light.woff") format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src:  url("../fonts/geometria-light-italic.woff2") format('woff2'),
+  url("../fonts/geometria-light-italic.woff") format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src:  url("../fonts/geometria-medium.woff2") format('woff2'),
+  url("../fonts/geometria-medium.woff") format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geometria';
+  src:  url("../fonts/geometria-medium-italic.woff2") format('woff2'),
+  url("../fonts/geometria-medium-italic.woff") format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}

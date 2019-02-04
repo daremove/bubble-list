@@ -1,0 +1,83 @@
+
+//
+// Typography
+// --------------------------------------------------
+
+.typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 56px 0 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    clear: both;
+  }
+
+  h1 {
+    font-size: 33px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 19px;
+  }
+
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  h5:first-child,
+  h6:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0 0 8px;
+    line-height: 1.5;
+  }
+
+  p+ul {
+    margin: 0 0 30px;
+  }
+
+  ul,
+  ol {
+    margin: 16px 0;
+    padding-left: 40px;
+  }
+
+  li {
+    display: list-item;
+  }
+
+
+  //== Выравнивания для WordPress в блоке контента
+
+  .alignleft {
+    float: left;
+    margin: 6px 28px 28px 0;
+  }
+
+  .alignright {
+    float: right;
+    margin: 6px 0 28px 28px;
+  }
+
+  .aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto 28px;
+  }
+}

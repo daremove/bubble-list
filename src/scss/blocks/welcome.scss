@@ -1,0 +1,51 @@
+.welcome__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__title {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  font-family: $font-family-base;
+  color: color('welcome', 'title');
+  font-weight: $light;
+  font-size: 3rem;
+}
+
+.welcome__description {
+  margin-bottom: 40px;
+
+  font-family: $font-family-base;
+  font-weight: $medium;
+  font-size: 1.25rem;
+  color: color('welcome', 'description');
+}
+
+.welcome__bubble {
+  position: absolute;
+  top: 10px;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+
+  background-color: #28aee4;
+
+  box-shadow : inset 0 15px 25px rgba(#fff, .2),
+  inset 0 20px 15px rgba(#ddd, .3);
+
+  transition: transform .5s;
+
+  animation: fly 2s forwards;
+}

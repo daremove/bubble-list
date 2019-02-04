@@ -1,0 +1,47 @@
+{
+  "name": "bubble-list",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "set NODE_ENV=development&&webpack --config webpack.config.js --mode development",
+    "prod": "set NODE_ENV=production&&webpack --config webpack.config.js --mode production",
+    "watch": "webpack-dev-server --mode development --open"
+  },
+  "main": "webpack.config.js",
+  "dependencies": {
+    "terser": "^3.14.1",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.2",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "concurrently": "^4.1.0",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "font-awesome-loader": "^1.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack-md5-hash": "0.0.6"
+  },
+  "author": "Alexander Asmeev",
+  "license": "ISC",
+  "keywords": [],
+  "description": "to-do list"
+}
